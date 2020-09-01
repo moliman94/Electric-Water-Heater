@@ -1,0 +1,533 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"17 ./HEATER.h
+[; ;./HEATER.h: 17: void heater_off(void);
+[v _heater_off `(v ~T0 @X0 0 ef ]
+"17 ./COOLER.h
+[; ;./COOLER.h: 17: void cooler_off(void);
+[v _cooler_off `(v ~T0 @X0 0 ef ]
+"35 ./LM35.h
+[; ;./LM35.h: 35: void LM35_Read_Temp(void);
+[v _LM35_Read_Temp `(v ~T0 @X0 0 ef ]
+"10 Temp_Sens_Task.c
+[; ;Temp_Sens_Task.c: 10: extern uint8 temp_in_C;
+[v _temp_in_C `uc ~T0 @X0 0 e ]
+"22 ./Temp_Sens_Task.h
+[; ;./Temp_Sens_Task.h: 22: void Calc_avg_reading(uint8 *avg_arr);
+[v _Calc_avg_reading `(v ~T0 @X0 0 ef1`*uc ]
+"18 ./LED.h
+[; ;./LED.h: 18: void LED_off(void);
+[v _LED_off `(v ~T0 @X0 0 ef ]
+"11 Temp_Sens_Task.c
+[; ;Temp_Sens_Task.c: 11: extern s_int8 Set_temp;
+[v _Set_temp `c ~T0 @X0 0 e ]
+"16 ./HEATER.h
+[; ;./HEATER.h: 16: void heater_on(void);
+[v _heater_on `(v ~T0 @X0 0 ef ]
+"19 ./LED.h
+[; ;./LED.h: 19: void LED_tog(void);
+[v _LED_tog `(v ~T0 @X0 0 ef ]
+"16 ./COOLER.h
+[; ;./COOLER.h: 16: void cooler_on(void);
+[v _cooler_on `(v ~T0 @X0 0 ef ]
+"17 ./LED.h
+[; ;./LED.h: 17: void LED_on(void);
+[v _LED_on `(v ~T0 @X0 0 ef ]
+"12 Temp_Sens_Task.c
+[; ;Temp_Sens_Task.c: 12: extern uint8 System_state;
+[v _System_state `uc ~T0 @X0 0 e ]
+"16 ./LED.h
+[; ;./LED.h: 16: void LED_init(void);
+[v _LED_init `(v ~T0 @X0 0 ef ]
+"15 ./HEATER.h
+[; ;./HEATER.h: 15: void heater_init(void);
+[v _heater_init `(v ~T0 @X0 0 ef ]
+"15 ./COOLER.h
+[; ;./COOLER.h: 15: void cooler_init(void);
+[v _cooler_init `(v ~T0 @X0 0 ef ]
+"23 ./LM35.h
+[; ;./LM35.h: 23: void LM35_init(void);
+[v _LM35_init `(v ~T0 @X0 0 ef ]
+"54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"19 ./main.h
+[p x FOSC = EXTRC ]
+"20
+[p x WDTE = OFF ]
+"21
+[p x PWRTE = OFF ]
+"22
+[p x BOREN = ON ]
+"23
+[p x LVP = ON ]
+"24
+[p x CPD = OFF ]
+"25
+[p x WRT = OFF ]
+"26
+[p x CP = OFF ]
+"21 ./DELAY.h
+[; ;./DELAY.h: 21: uint32 DelayCount;
+[v _DelayCount `ul ~T0 @X0 1 e ]
+"21 Temp_Sens_Task.c
+[; ;Temp_Sens_Task.c: 21: static uint8 Heating_Cooling_state = 0;
+[v _Heating_Cooling_state `uc ~T0 @X0 1 s ]
+[i _Heating_Cooling_state
+-> -> 0 `i `uc
+]
+"22
+[; ;Temp_Sens_Task.c: 22: static uint8 First_Reading_flag = 0;
+[v _First_Reading_flag `uc ~T0 @X0 1 s ]
+[i _First_Reading_flag
+-> -> 0 `i `uc
+]
+"23
+[; ;Temp_Sens_Task.c: 23: static uint8 LED_heating_time = 0;
+[v _LED_heating_time `uc ~T0 @X0 1 s ]
+[i _LED_heating_time
+-> -> 0 `i `uc
+]
+"24
+[; ;Temp_Sens_Task.c: 24: static uint8 readings_arr[10] = {0};
+[v _readings_arr `uc ~T0 @X0 -> 10 `i s ]
+[i _readings_arr
+:U ..
+-> -> 0 `i `uc
+..
+]
+"27
+[; ;Temp_Sens_Task.c: 27: s_int8 avg_temp_in_C;
+[v _avg_temp_in_C `c ~T0 @X0 1 e ]
+"29
+[; ;Temp_Sens_Task.c: 29: void Temp_Sens_Task(void)
+[v _Temp_Sens_Task `(v ~T0 @X0 1 ef ]
+"30
+[; ;Temp_Sens_Task.c: 30: {
+{
+[e :U _Temp_Sens_Task ]
+[f ]
+"31
+[; ;Temp_Sens_Task.c: 31:     static uint8 reading_count = 0;
+[v F885 `uc ~T0 @X0 1 s reading_count ]
+[i F885
+-> -> 0 `i `uc
+]
+"32
+[; ;Temp_Sens_Task.c: 32:     switch (System_state)
+[e $U 97  ]
+"33
+[; ;Temp_Sens_Task.c: 33:     {
+{
+"34
+[; ;Temp_Sens_Task.c: 34:     case 2:
+[e :U 98 ]
+"35
+[; ;Temp_Sens_Task.c: 35:         heater_off();
+[e ( _heater_off ..  ]
+"36
+[; ;Temp_Sens_Task.c: 36:         cooler_off();
+[e ( _cooler_off ..  ]
+"37
+[; ;Temp_Sens_Task.c: 37:         break;
+[e $U 96  ]
+"38
+[; ;Temp_Sens_Task.c: 38:     case 1:
+[e :U 99 ]
+"39
+[; ;Temp_Sens_Task.c: 39:         LM35_Read_Temp();
+[e ( _LM35_Read_Temp ..  ]
+"40
+[; ;Temp_Sens_Task.c: 40:         readings_arr[reading_count] = temp_in_C;
+[e = *U + &U _readings_arr * -> F885 `ux -> -> # *U &U _readings_arr `ui `ux _temp_in_C ]
+"42
+[; ;Temp_Sens_Task.c: 42:         if (++reading_count == 10)
+[e $ ! == -> =+ F885 -> -> 1 `i `uc `i -> 10 `i 100  ]
+"43
+[; ;Temp_Sens_Task.c: 43:         {
+{
+"44
+[; ;Temp_Sens_Task.c: 44:             reading_count = 0;
+[e = F885 -> -> 0 `i `uc ]
+"45
+[; ;Temp_Sens_Task.c: 45:             Calc_avg_reading(readings_arr);
+[e ( _Calc_avg_reading (1 &U _readings_arr ]
+"46
+[; ;Temp_Sens_Task.c: 46:             First_Reading_flag = 1;
+[e = _First_Reading_flag -> -> 1 `i `uc ]
+"47
+[; ;Temp_Sens_Task.c: 47:         }
+}
+[e :U 100 ]
+"48
+[; ;Temp_Sens_Task.c: 48:         if (First_Reading_flag)
+[e $ ! != -> _First_Reading_flag `i -> 0 `i 101  ]
+"49
+[; ;Temp_Sens_Task.c: 49:         {
+{
+"50
+[; ;Temp_Sens_Task.c: 50:             switch (Heating_Cooling_state)
+[e $U 103  ]
+"51
+[; ;Temp_Sens_Task.c: 51:             {
+{
+"52
+[; ;Temp_Sens_Task.c: 52:             case 0:
+[e :U 104 ]
+"53
+[; ;Temp_Sens_Task.c: 53:                 heater_off();
+[e ( _heater_off ..  ]
+"54
+[; ;Temp_Sens_Task.c: 54:                 cooler_off();
+[e ( _cooler_off ..  ]
+"55
+[; ;Temp_Sens_Task.c: 55:                 LED_off();
+[e ( _LED_off ..  ]
+"57
+[; ;Temp_Sens_Task.c: 57:                 if ((avg_temp_in_C - Set_temp) < -5)
+[e $ ! < - -> _avg_temp_in_C `i -> _Set_temp `i -U -> 5 `i 105  ]
+"58
+[; ;Temp_Sens_Task.c: 58:                     Heating_Cooling_state = 1;
+[e = _Heating_Cooling_state -> -> 1 `i `uc ]
+[e $U 106  ]
+"59
+[; ;Temp_Sens_Task.c: 59:                 else
+[e :U 105 ]
+"60
+[; ;Temp_Sens_Task.c: 60:                     Heating_Cooling_state = 2;
+[e = _Heating_Cooling_state -> -> 2 `i `uc ]
+[e :U 106 ]
+"61
+[; ;Temp_Sens_Task.c: 61:                 break;
+[e $U 102  ]
+"63
+[; ;Temp_Sens_Task.c: 63:             case 1:
+[e :U 107 ]
+"64
+[; ;Temp_Sens_Task.c: 64:                 cooler_off();
+[e ( _cooler_off ..  ]
+"65
+[; ;Temp_Sens_Task.c: 65:                 heater_on();
+[e ( _heater_on ..  ]
+"67
+[; ;Temp_Sens_Task.c: 67:                 if (++LED_heating_time == (10))
+[e $ ! == -> =+ _LED_heating_time -> -> 1 `i `uc `i -> 10 `i 108  ]
+"68
+[; ;Temp_Sens_Task.c: 68:                 {
+{
+"69
+[; ;Temp_Sens_Task.c: 69:                     LED_tog();
+[e ( _LED_tog ..  ]
+"70
+[; ;Temp_Sens_Task.c: 70:                     LED_heating_time = 0;
+[e = _LED_heating_time -> -> 0 `i `uc ]
+"71
+[; ;Temp_Sens_Task.c: 71:                 }
+}
+[e :U 108 ]
+"73
+[; ;Temp_Sens_Task.c: 73:                 if ((avg_temp_in_C - Set_temp) >= 5)
+[e $ ! >= - -> _avg_temp_in_C `i -> _Set_temp `i -> 5 `i 109  ]
+"74
+[; ;Temp_Sens_Task.c: 74:                     Heating_Cooling_state = 2;
+[e = _Heating_Cooling_state -> -> 2 `i `uc ]
+[e :U 109 ]
+"75
+[; ;Temp_Sens_Task.c: 75:                 break;
+[e $U 102  ]
+"77
+[; ;Temp_Sens_Task.c: 77:             case 2:
+[e :U 110 ]
+"78
+[; ;Temp_Sens_Task.c: 78:                 heater_off();
+[e ( _heater_off ..  ]
+"79
+[; ;Temp_Sens_Task.c: 79:                 cooler_on();
+[e ( _cooler_on ..  ]
+"81
+[; ;Temp_Sens_Task.c: 81:                 LED_on();
+[e ( _LED_on ..  ]
+"83
+[; ;Temp_Sens_Task.c: 83:                 if ((avg_temp_in_C - Set_temp) < -5)
+[e $ ! < - -> _avg_temp_in_C `i -> _Set_temp `i -U -> 5 `i 111  ]
+"84
+[; ;Temp_Sens_Task.c: 84:                     Heating_Cooling_state = 1;
+[e = _Heating_Cooling_state -> -> 1 `i `uc ]
+[e :U 111 ]
+"85
+[; ;Temp_Sens_Task.c: 85:                 break;
+[e $U 102  ]
+"86
+[; ;Temp_Sens_Task.c: 86:             }
+}
+[e $U 102  ]
+[e :U 103 ]
+[e [\ -> _Heating_Cooling_state `i , $ -> 0 `i 104
+ , $ -> 1 `i 107
+ , $ -> 2 `i 110
+ 102 ]
+[e :U 102 ]
+"87
+[; ;Temp_Sens_Task.c: 87:         }
+}
+[e :U 101 ]
+"88
+[; ;Temp_Sens_Task.c: 88:     }
+}
+[e $U 96  ]
+[e :U 97 ]
+[e [\ -> _System_state `i , $ -> 2 `i 98
+ , $ -> 1 `i 99
+ 96 ]
+[e :U 96 ]
+"89
+[; ;Temp_Sens_Task.c: 89: }
+[e :UE 95 ]
+}
+"91
+[; ;Temp_Sens_Task.c: 91: void Calc_avg_reading(uint8 *avg_arr)
+[v _Calc_avg_reading `(v ~T0 @X0 1 ef1`*uc ]
+"92
+[; ;Temp_Sens_Task.c: 92: {
+{
+[e :U _Calc_avg_reading ]
+"91
+[; ;Temp_Sens_Task.c: 91: void Calc_avg_reading(uint8 *avg_arr)
+[v _avg_arr `*uc ~T0 @X0 1 r1 ]
+"92
+[; ;Temp_Sens_Task.c: 92: {
+[f ]
+"93
+[; ;Temp_Sens_Task.c: 93:     uint8 count;
+[v _count `uc ~T0 @X0 1 a ]
+"94
+[; ;Temp_Sens_Task.c: 94:     uint16 sum_temp = 0;
+[v _sum_temp `us ~T0 @X0 1 a ]
+[e = _sum_temp -> -> 0 `i `us ]
+"95
+[; ;Temp_Sens_Task.c: 95:     for (count = 0; count < 10; count++)
+{
+[e = _count -> -> 0 `i `uc ]
+[e $ < -> _count `i -> 10 `i 113  ]
+[e $U 114  ]
+[e :U 113 ]
+"96
+[; ;Temp_Sens_Task.c: 96:     {
+{
+"97
+[; ;Temp_Sens_Task.c: 97:         sum_temp += avg_arr[count];
+[e =+ _sum_temp -> *U + _avg_arr * -> _count `ux -> -> # *U _avg_arr `ui `ux `us ]
+"98
+[; ;Temp_Sens_Task.c: 98:     }
+}
+[e ++ _count -> -> 1 `i `uc ]
+[e $ < -> _count `i -> 10 `i 113  ]
+[e :U 114 ]
+}
+"99
+[; ;Temp_Sens_Task.c: 99:     avg_temp_in_C = sum_temp / 10;
+[e = _avg_temp_in_C -> / -> _sum_temp `ui -> -> 10 `i `ui `c ]
+"100
+[; ;Temp_Sens_Task.c: 100: }
+[e :UE 112 ]
+}
+"102
+[; ;Temp_Sens_Task.c: 102: void Temp_Sens_Task_init()
+[v _Temp_Sens_Task_init `(v ~T0 @X0 1 ef ]
+"103
+[; ;Temp_Sens_Task.c: 103: {
+{
+[e :U _Temp_Sens_Task_init ]
+[f ]
+"104
+[; ;Temp_Sens_Task.c: 104:     LED_init();
+[e ( _LED_init ..  ]
+"105
+[; ;Temp_Sens_Task.c: 105:     heater_init();
+[e ( _heater_init ..  ]
+"106
+[; ;Temp_Sens_Task.c: 106:     cooler_init();
+[e ( _cooler_init ..  ]
+"107
+[; ;Temp_Sens_Task.c: 107:     LM35_init();
+[e ( _LM35_init ..  ]
+"108
+[; ;Temp_Sens_Task.c: 108: }
+[e :UE 116 ]
+}

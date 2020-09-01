@@ -1,0 +1,730 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 D:\Electric Water Heater Project\Electric_Heater.X\ADC.c
+[v _ADC_init ADC_init `(v  1 e 1 0 ]
+"27
+[v _ADC_get_Sample ADC_get_Sample `(us  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"16 D:\Electric Water Heater Project\Electric_Heater.X\COOLER.c
+[v _cooler_init cooler_init `(v  1 e 1 0 ]
+"23
+[v _cooler_on cooler_on `(v  1 e 1 0 ]
+"28
+[v _cooler_off cooler_off `(v  1 e 1 0 ]
+"16 D:\Electric Water Heater Project\Electric_Heater.X\DISPLAY_TASK.c
+[v _DISPLAY_TASK_init DISPLAY_TASK_init `(v  1 e 1 0 ]
+"21
+[v _DISPLAY_TASK DISPLAY_TASK `(v  1 e 1 0 ]
+"10 D:\Electric Water Heater Project\Electric_Heater.X\EEPROM_I2C.c
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+"24
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"10 D:\Electric Water Heater Project\Electric_Heater.X\EXT_INT_RB0.c
+[v _EXT_INT_RB0_init EXT_INT_RB0_init `(v  1 e 1 0 ]
+"28
+[v _EXT_INT_RB0_EN EXT_INT_RB0_EN `(v  1 e 1 0 ]
+"16 D:\Electric Water Heater Project\Electric_Heater.X\HEATER.c
+[v _heater_init heater_init `(v  1 e 1 0 ]
+"23
+[v _heater_on heater_on `(v  1 e 1 0 ]
+"28
+[v _heater_off heater_off `(v  1 e 1 0 ]
+"10 D:\Electric Water Heater Project\Electric_Heater.X\I2C.c
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"15
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"25
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"33
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"41
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+"59
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+"69
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+"79
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+"33 D:\Electric Water Heater Project\Electric_Heater.X\KEYBOARD.c
+[v _keyboard_init keyboard_init `(v  1 e 1 0 ]
+"46
+[v _UP_switch_update UP_switch_update `(v  1 e 1 0 ]
+"79
+[v _DOWN_switch_update DOWN_switch_update `(v  1 e 1 0 ]
+"16 D:\Electric Water Heater Project\Electric_Heater.X\LED.c
+[v _LED_init LED_init `(v  1 e 1 0 ]
+"24
+[v _LED_on LED_on `(v  1 e 1 0 ]
+"30
+[v _LED_off LED_off `(v  1 e 1 0 ]
+"36
+[v _LED_tog LED_tog `(v  1 e 1 0 ]
+"13 D:\Electric Water Heater Project\Electric_Heater.X\LM35.c
+[v _LM35_init LM35_init `(v  1 e 1 0 ]
+"19
+[v _LM35_Read_Temp LM35_Read_Temp `(v  1 e 1 0 ]
+"28 D:\Electric Water Heater Project\Electric_Heater.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"79
+[v _SYSTEM_init SYSTEM_init `(v  1 e 1 0 ]
+"88
+[v _ISR ISR `II(v  1 e 1 0 ]
+"15 D:\Electric Water Heater Project\Electric_Heater.X\SCH_PIC16F877A.c
+[v _SCH_init_TMR1 SCH_init_TMR1 `(v  1 e 1 0 ]
+"45
+[v _SCH_Update_Task SCH_Update_Task `(v  1 e 1 0 ]
+"94
+[v _SCH_Add_Task SCH_Add_Task `(uc  1 e 1 0 ]
+"122
+[v _SCH_Dispatch_Tasks SCH_Dispatch_Tasks `(v  1 e 1 0 ]
+"146
+[v _SCH_Start SCH_Start `(v  1 e 1 0 ]
+"152
+[v _SCH_Delete_Task SCH_Delete_Task `(v  1 e 1 0 ]
+"12 D:\Electric Water Heater Project\Electric_Heater.X\SLEEP.c
+[v _GOTO_SLEEP GOTO_SLEEP `(v  1 e 1 0 ]
+"36 D:\Electric Water Heater Project\Electric_Heater.X\SSD.c
+[v _SSD_init SSD_init `(v  1 e 1 0 ]
+"44
+[v _SSD_update SSD_update `(v  1 e 1 0 ]
+"64
+[v _SSD_print_2dig SSD_print_2dig `(v  1 e 1 0 ]
+"76
+[v _SSD_turn_off SSD_turn_off `(v  1 e 1 0 ]
+"31 D:\Electric Water Heater Project\Electric_Heater.X\SYSTEM_STATE_UPDATE_TASK.c
+[v _SYSTEM_STATE_UPDATE_TASK SYSTEM_STATE_UPDATE_TASK `(v  1 e 1 0 ]
+"110
+[v _SYSTEM_UPDATE_init SYSTEM_UPDATE_init `(v  1 e 1 0 ]
+"29 D:\Electric Water Heater Project\Electric_Heater.X\Temp_Sens_Task.c
+[v _Temp_Sens_Task Temp_Sens_Task `(v  1 e 1 0 ]
+"91
+[v _Calc_avg_reading Calc_avg_reading `(v  1 e 1 0 ]
+"102
+[v _Temp_Sens_Task_init Temp_Sens_Task_init `(v  1 e 1 0 ]
+"10 D:\Electric Water Heater Project\Electric_Heater.X\TIMER1.c
+[v _TMR1_init TMR1_init `(v  1 e 1 0 ]
+"29
+[v _TMR1_OVFINT_init TMR1_OVFINT_init `(v  1 e 1 0 ]
+"41
+[v _TMR1_start TMR1_start `(v  1 e 1 0 ]
+"21 D:\Electric Water Heater Project\Electric_Heater.X/DELAY.h
+[v _DelayCount DelayCount `ul  1 e 4 0 ]
+"166 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"216
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"278
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"402
+[v _PORTE PORTE `VEuc  1 e 1 @9 ]
+"454
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"532
+[v _PIR1 PIR1 `VEuc  1 e 1 @12 ]
+[s S390 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S399 . 1 `S390 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES399  1 e 1 @12 ]
+"634
+[v _TMR1 TMR1 `VEus  1 e 2 @14 ]
+"655
+[v _T1CON T1CON `VEuc  1 e 1 @16 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1152
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+"1159
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
+"1255
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+[s S348 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1454
+[u S357 . 1 `S348 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES357  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1618
+[v _PIE1 PIE1 `VEuc  1 e 1 @140 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+[s S369 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"1771
+[u S378 . 1 `S369 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES378  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2222
+[v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"14 D:\Electric Water Heater Project\Electric_Heater.X\DISPLAY_TASK.c
+[v _SSD_blinking_time SSD_blinking_time `uc  1 s 1 SSD_blinking_time ]
+"15
+[v _blinking_state blinking_state `uc  1 s 1 blinking_state ]
+"18 D:\Electric Water Heater Project\Electric_Heater.X\KEYBOARD.c
+[v _UP_SW_pressed_st UP_SW_pressed_st `uc  1 e 1 0 ]
+"19
+[v _DOWN_SW_pressed_st DOWN_SW_pressed_st `uc  1 e 1 0 ]
+"28
+[v _UP_Sw_press_duration_G UP_Sw_press_duration_G `uc  1 s 1 UP_Sw_press_duration_G ]
+"29
+[v _DOWN_Sw_press_duration_G DOWN_Sw_press_duration_G `uc  1 s 1 DOWN_Sw_press_duration_G ]
+"30
+[v _UP_Sw_blocked_G UP_Sw_blocked_G `uc  1 s 1 UP_Sw_blocked_G ]
+"31
+[v _DOWN_Sw_blocked_G DOWN_Sw_blocked_G `uc  1 s 1 DOWN_Sw_blocked_G ]
+"11 D:\Electric Water Heater Project\Electric_Heater.X\LM35.c
+[v _temp_in_C temp_in_C `uc  1 e 1 0 ]
+"26 D:\Electric Water Heater Project\Electric_Heater.X\main.c
+[v _Set_temp Set_temp `c  1 e 1 0 ]
+"10 D:\Electric Water Heater Project\Electric_Heater.X\SCH_PIC16F877A.c
+[v _ERROR_Code ERROR_Code `uc  1 e 1 0 ]
+[s S216 Tasks 6 `*.27(v 1 ptr_Task 1 0 `us 1 Delay 2 1 `us 1 Period 2 3 `uc 1 Run 1 5 ]
+"13
+[v _SCH_tasks SCH_tasks `[3]S216  1 e 18 0 ]
+"10 D:\Electric Water Heater Project\Electric_Heater.X\SLEEP.c
+[v _SLEEP_flag SLEEP_flag `uc  1 e 1 0 ]
+"30 D:\Electric Water Heater Project\Electric_Heater.X\SSD.c
+[v _SSD_codes SSD_codes `DC[20]uc  1 e 20 0 ]
+"34
+[v _SSD_Data SSD_Data `[2]uc  1 e 2 0 ]
+"25 D:\Electric Water Heater Project\Electric_Heater.X\SYSTEM_STATE_UPDATE_TASK.c
+[v _Read_Button_state Read_Button_state `uc  1 s 1 Read_Button_state ]
+"26
+[v _Timeout_button Timeout_button `uc  1 s 1 Timeout_button ]
+"29
+[v _System_state System_state `uc  1 e 1 0 ]
+"21 D:\Electric Water Heater Project\Electric_Heater.X\Temp_Sens_Task.c
+[v _Heating_Cooling_state Heating_Cooling_state `uc  1 s 1 Heating_Cooling_state ]
+"22
+[v _First_Reading_flag First_Reading_flag `uc  1 s 1 First_Reading_flag ]
+"23
+[v _LED_heating_time LED_heating_time `uc  1 s 1 LED_heating_time ]
+"24
+[v _readings_arr readings_arr `[10]uc  1 s 10 readings_arr ]
+"27
+[v _avg_temp_in_C avg_temp_in_C `c  1 e 1 0 ]
+"28 D:\Electric Water Heater Project\Electric_Heater.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"77
+} 0
+"79
+[v _SYSTEM_init SYSTEM_init `(v  1 e 1 0 ]
+{
+"86
+} 0
+"102 D:\Electric Water Heater Project\Electric_Heater.X\Temp_Sens_Task.c
+[v _Temp_Sens_Task_init Temp_Sens_Task_init `(v  1 e 1 0 ]
+{
+"108
+} 0
+"16 D:\Electric Water Heater Project\Electric_Heater.X\HEATER.c
+[v _heater_init heater_init `(v  1 e 1 0 ]
+{
+"22
+} 0
+"16 D:\Electric Water Heater Project\Electric_Heater.X\COOLER.c
+[v _cooler_init cooler_init `(v  1 e 1 0 ]
+{
+"22
+} 0
+"13 D:\Electric Water Heater Project\Electric_Heater.X\LM35.c
+[v _LM35_init LM35_init `(v  1 e 1 0 ]
+{
+"17
+} 0
+"10 D:\Electric Water Heater Project\Electric_Heater.X\ADC.c
+[v _ADC_init ADC_init `(v  1 e 1 0 ]
+{
+"25
+} 0
+"16 D:\Electric Water Heater Project\Electric_Heater.X\LED.c
+[v _LED_init LED_init `(v  1 e 1 0 ]
+{
+"22
+} 0
+"110 D:\Electric Water Heater Project\Electric_Heater.X\SYSTEM_STATE_UPDATE_TASK.c
+[v _SYSTEM_UPDATE_init SYSTEM_UPDATE_init `(v  1 e 1 0 ]
+{
+"114
+} 0
+"33 D:\Electric Water Heater Project\Electric_Heater.X\KEYBOARD.c
+[v _keyboard_init keyboard_init `(v  1 e 1 0 ]
+{
+"44
+} 0
+"15 D:\Electric Water Heater Project\Electric_Heater.X\I2C.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+"23
+} 0
+"10 D:\Electric Water Heater Project\Electric_Heater.X\EXT_INT_RB0.c
+[v _EXT_INT_RB0_init EXT_INT_RB0_init `(v  1 e 1 0 ]
+{
+"26
+} 0
+"28
+[v _EXT_INT_RB0_EN EXT_INT_RB0_EN `(v  1 e 1 0 ]
+{
+"34
+} 0
+"16 D:\Electric Water Heater Project\Electric_Heater.X\DISPLAY_TASK.c
+[v _DISPLAY_TASK_init DISPLAY_TASK_init `(v  1 e 1 0 ]
+{
+"19
+} 0
+"36 D:\Electric Water Heater Project\Electric_Heater.X\SSD.c
+[v _SSD_init SSD_init `(v  1 e 1 0 ]
+{
+"42
+} 0
+"15 D:\Electric Water Heater Project\Electric_Heater.X\SCH_PIC16F877A.c
+[v _SCH_init_TMR1 SCH_init_TMR1 `(v  1 e 1 0 ]
+{
+"17
+[v SCH_init_TMR1@i i `uc  1 a 1 4 ]
+"38
+} 0
+"41 D:\Electric Water Heater Project\Electric_Heater.X\TIMER1.c
+[v _TMR1_start TMR1_start `(v  1 e 1 0 ]
+{
+"44
+} 0
+"10
+[v _TMR1_init TMR1_init `(v  1 e 1 0 ]
+{
+"27
+} 0
+"29
+[v _TMR1_OVFINT_init TMR1_OVFINT_init `(v  1 e 1 0 ]
+{
+"39
+} 0
+"146 D:\Electric Water Heater Project\Electric_Heater.X\SCH_PIC16F877A.c
+[v _SCH_Start SCH_Start `(v  1 e 1 0 ]
+{
+"150
+} 0
+"122
+[v _SCH_Dispatch_Tasks SCH_Dispatch_Tasks `(v  1 e 1 0 ]
+{
+"124
+[v SCH_Dispatch_Tasks@Index Index `uc  1 a 1 79 ]
+"140
+} 0
+"21 D:\Electric Water Heater Project\Electric_Heater.X\DISPLAY_TASK.c
+[v _DISPLAY_TASK DISPLAY_TASK `(v  1 e 1 0 ]
+{
+"47
+} 0
+"31 D:\Electric Water Heater Project\Electric_Heater.X\SYSTEM_STATE_UPDATE_TASK.c
+[v _SYSTEM_STATE_UPDATE_TASK SYSTEM_STATE_UPDATE_TASK `(v  1 e 1 0 ]
+{
+"108
+} 0
+"29 D:\Electric Water Heater Project\Electric_Heater.X\Temp_Sens_Task.c
+[v _Temp_Sens_Task Temp_Sens_Task `(v  1 e 1 0 ]
+{
+"31
+[v Temp_Sens_Task@reading_count reading_count `uc  1 s 1 reading_count ]
+"89
+} 0
+"23 D:\Electric Water Heater Project\Electric_Heater.X\HEATER.c
+[v _heater_on heater_on `(v  1 e 1 0 ]
+{
+"27
+} 0
+"28
+[v _heater_off heater_off `(v  1 e 1 0 ]
+{
+"32
+} 0
+"23 D:\Electric Water Heater Project\Electric_Heater.X\COOLER.c
+[v _cooler_on cooler_on `(v  1 e 1 0 ]
+{
+"27
+} 0
+"28
+[v _cooler_off cooler_off `(v  1 e 1 0 ]
+{
+"32
+} 0
+"19 D:\Electric Water Heater Project\Electric_Heater.X\LM35.c
+[v _LM35_Read_Temp LM35_Read_Temp `(v  1 e 1 0 ]
+{
+"22
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 17 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 16 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 7 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 15 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 78 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 77 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 73 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S761 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S766 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S769 . 4 `l 1 i 4 0 `d 1 f 4 0 `S761 1 fAsBytes 4 0 `S766 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S769  1 a 4 41 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 35 ]
+[s S838 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S841 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S838 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S841  1 a 2 45 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 40 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 39 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 34 ]
+"8
+[v ___flmul@b b `d  1 p 4 21 ]
+[v ___flmul@a a `d  1 p 4 25 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 67 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 60 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 65 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 72 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 71 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 64 ]
+"8
+[v ___fldiv@a a `d  1 p 4 47 ]
+[v ___fldiv@b b `d  1 p 4 51 ]
+"185
+} 0
+"27 D:\Electric Water Heater Project\Electric_Heater.X\ADC.c
+[v _ADC_get_Sample ADC_get_Sample `(us  1 e 2 0 ]
+{
+[v ADC_get_Sample@ADC_channel ADC_channel `DCuc  1 a 1 wreg ]
+[v ADC_get_Sample@ADC_channel ADC_channel `DCuc  1 a 1 wreg ]
+"30
+[v ADC_get_Sample@ADC_channel ADC_channel `DCuc  1 a 1 6 ]
+"40
+} 0
+"36 D:\Electric Water Heater Project\Electric_Heater.X\LED.c
+[v _LED_tog LED_tog `(v  1 e 1 0 ]
+{
+"40
+} 0
+"24
+[v _LED_on LED_on `(v  1 e 1 0 ]
+{
+"28
+} 0
+"30
+[v _LED_off LED_off `(v  1 e 1 0 ]
+{
+"34
+} 0
+"91 D:\Electric Water Heater Project\Electric_Heater.X\Temp_Sens_Task.c
+[v _Calc_avg_reading Calc_avg_reading `(v  1 e 1 0 ]
+{
+[v Calc_avg_reading@avg_arr avg_arr `*.4uc  1 a 1 wreg ]
+"94
+[v Calc_avg_reading@sum_temp sum_temp `us  1 a 2 10 ]
+"93
+[v Calc_avg_reading@count count `uc  1 a 1 13 ]
+"91
+[v Calc_avg_reading@avg_arr avg_arr `*.4uc  1 a 1 wreg ]
+"94
+[v Calc_avg_reading@avg_arr avg_arr `*.4uc  1 a 1 12 ]
+"100
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
+"46 D:\Electric Water Heater Project\Electric_Heater.X\KEYBOARD.c
+[v _UP_switch_update UP_switch_update `(v  1 e 1 0 ]
+{
+"77
+} 0
+"10 D:\Electric Water Heater Project\Electric_Heater.X\EEPROM_I2C.c
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+[v EEPROM_Write@add add `ui  1 p 2 2 ]
+[v EEPROM_Write@data data `uc  1 p 1 4 ]
+"20
+} 0
+"79 D:\Electric Water Heater Project\Electric_Heater.X\KEYBOARD.c
+[v _DOWN_switch_update DOWN_switch_update `(v  1 e 1 0 ]
+{
+"110
+} 0
+"152 D:\Electric Water Heater Project\Electric_Heater.X\SCH_PIC16F877A.c
+[v _SCH_Delete_Task SCH_Delete_Task `(v  1 e 1 0 ]
+{
+[v SCH_Delete_Task@Task_Index Task_Index `DCuc  1 a 1 wreg ]
+[v SCH_Delete_Task@Task_Index Task_Index `DCuc  1 a 1 wreg ]
+"154
+[v SCH_Delete_Task@Task_Index Task_Index `DCuc  1 a 1 3 ]
+"162
+} 0
+"76 D:\Electric Water Heater Project\Electric_Heater.X\SSD.c
+[v _SSD_turn_off SSD_turn_off `(v  1 e 1 0 ]
+{
+"80
+} 0
+"64
+[v _SSD_print_2dig SSD_print_2dig `(v  1 e 1 0 ]
+{
+[v SSD_print_2dig@val val `uc  1 a 1 wreg ]
+[v SSD_print_2dig@val val `uc  1 a 1 wreg ]
+"66
+[v SSD_print_2dig@val val `uc  1 a 1 10 ]
+"74
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"44 D:\Electric Water Heater Project\Electric_Heater.X\SSD.c
+[v _SSD_update SSD_update `(v  1 e 1 0 ]
+{
+"46
+[v SSD_update@digit digit `uc  1 s 1 digit ]
+"62
+} 0
+"94 D:\Electric Water Heater Project\Electric_Heater.X\SCH_PIC16F877A.c
+[v _SCH_Add_Task SCH_Add_Task `(uc  1 e 1 0 ]
+{
+[v SCH_Add_Task@ptr_fun ptr_fun `*.27(v  1 a 1 wreg ]
+"96
+[v SCH_Add_Task@Index Index `uc  1 a 1 8 ]
+"94
+[v SCH_Add_Task@ptr_fun ptr_fun `*.27(v  1 a 1 wreg ]
+[v SCH_Add_Task@Delay Delay `DCus  1 p 2 3 ]
+[v SCH_Add_Task@Period Period `DCus  1 p 2 5 ]
+"96
+[v SCH_Add_Task@ptr_fun ptr_fun `*.27(v  1 a 1 7 ]
+"115
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 1 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 2 ]
+"51
+} 0
+"12 D:\Electric Water Heater Project\Electric_Heater.X\SLEEP.c
+[v _GOTO_SLEEP GOTO_SLEEP `(v  1 e 1 0 ]
+{
+"23
+} 0
+"24 D:\Electric Water Heater Project\Electric_Heater.X\EEPROM_I2C.c
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+"26
+[v EEPROM_Read@Data Data `uc  1 a 1 4 ]
+"24
+[v EEPROM_Read@add add `ui  1 p 2 2 ]
+"39
+} 0
+"79 D:\Electric Water Heater Project\Electric_Heater.X\I2C.c
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+{
+"88
+} 0
+"59
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+{
+"67
+} 0
+"69
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Master_Write@Data Data `uc  1 a 1 wreg ]
+[v I2C_Master_Write@Data Data `uc  1 a 1 wreg ]
+"72
+[v I2C_Master_Write@Data Data `uc  1 a 1 1 ]
+"77
+} 0
+"33
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"39
+} 0
+"25
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"31
+} 0
+"41
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+{
+"47
+} 0
+"10
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"13
+} 0
+"88 D:\Electric Water Heater Project\Electric_Heater.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"106
+} 0
+"45 D:\Electric Water Heater Project\Electric_Heater.X\SCH_PIC16F877A.c
+[v _SCH_Update_Task SCH_Update_Task `(v  1 e 1 0 ]
+{
+"47
+[v SCH_Update_Task@Index Index `uc  1 a 1 5 ]
+"75
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8.c
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v i1___bmul@product product `uc  1 a 1 1 ]
+"4
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v i1___bmul@multiplier multiplier `uc  1 a 1 2 ]
+"51
+} 0
